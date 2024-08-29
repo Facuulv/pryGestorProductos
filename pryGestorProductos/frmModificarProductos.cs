@@ -57,17 +57,15 @@ namespace pryGestorProductos
         {
             Limpiar();
         }
-
-        private void txtCodigoProd_Leave(object sender, EventArgs e)
-        {
-            //txtCodigoProd.Enabled = false;
-        }
-
         private void frmModificarProductos_Load(object sender, EventArgs e)
         {
-            txtProducto.TabIndex = 4;
-            btnBuscar.TabIndex = 5;
-            txtCodigo.TabIndex = 6;
+            txtProducto.Select();
+            txtCodigo.TabIndex = 3;
+        }
+
+        private void txtCodigo_Leave(object sender, EventArgs e)
+        {
+            txtCodigo.Enabled = false;
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -60,9 +60,21 @@
             this.groupBox3.Location = new System.Drawing.Point(60, 96);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(157, 61);
-            this.groupBox3.TabIndex = 15;
+            this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CÓDIGO DEL PRODUCTO";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(38, 24);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(78, 22);
+            this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigo.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // groupBox2
             // 
@@ -83,7 +95,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(242, 248);
-            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DATOS A MODIFICAR";
             // 
@@ -134,7 +146,7 @@
             this.label6.Location = new System.Drawing.Point(5, 144);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
-            this.label6.TabIndex = 24;
+            this.label6.TabIndex = 19;
             this.label6.Text = "Stock:";
             // 
             // txtCategoria
@@ -151,7 +163,7 @@
             this.label5.Location = new System.Drawing.Point(5, 173);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 13);
-            this.label5.TabIndex = 22;
+            this.label5.TabIndex = 20;
             this.label5.Text = "Categoría:";
             // 
             // txtPrecio
@@ -168,7 +180,7 @@
             this.label4.Location = new System.Drawing.Point(5, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
-            this.label4.TabIndex = 20;
+            this.label4.TabIndex = 18;
             this.label4.Text = "Precio:";
             // 
             // label3
@@ -178,7 +190,7 @@
             this.label3.Location = new System.Drawing.Point(5, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
-            this.label3.TabIndex = 19;
+            this.label3.TabIndex = 17;
             this.label3.Text = "Descripción:";
             // 
             // txtNombre
@@ -195,7 +207,7 @@
             this.label2.Location = new System.Drawing.Point(5, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 17;
+            this.label2.TabIndex = 16;
             this.label2.Text = "Nombre:";
             // 
             // dgvProductos
@@ -206,7 +218,7 @@
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.RowTemplate.Height = 24;
             this.dgvProductos.Size = new System.Drawing.Size(780, 301);
-            this.dgvProductos.TabIndex = 18;
+            this.dgvProductos.TabIndex = 11;
             // 
             // groupBox1
             // 
@@ -218,7 +230,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(187, 82);
-            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BUSCAR";
             // 
@@ -239,7 +251,7 @@
             this.txtProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(110, 20);
-            this.txtProducto.TabIndex = 0;
+            this.txtProducto.TabIndex = 1;
             // 
             // label1
             // 
@@ -249,17 +261,8 @@
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 15;
             this.label1.Text = "Producto:";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCodigo.Location = new System.Drawing.Point(15, 26);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(127, 20);
-            this.txtCodigo.TabIndex = 3;
             // 
             // frmModificarProductos
             // 
