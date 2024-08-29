@@ -46,7 +46,7 @@ namespace pryGestorProductos
 
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "SELECT * FROM Productos";
+                comando.CommandText = "SELECT * FROM Productos ORDER BY id_Codigo";
 
                 DataTable tablaProductos = new DataTable();
 
