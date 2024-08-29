@@ -16,7 +16,7 @@ namespace pryGestorProductos
         {
             InitializeComponent();
         }
-        conexionBD ObjElimProd = new conexionBD();
+        clsconexionBD ObjElimProd = new clsconexionBD();
         private void btnCargar_Click(object sender, EventArgs e)
         {
             ObjElimProd.ListarProductos(dgvProductos);

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtCodigoProd = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -56,22 +56,13 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.txtCodigoProd);
-            this.groupBox3.Location = new System.Drawing.Point(59, 96);
+            this.groupBox3.Controls.Add(this.txtCodigo);
+            this.groupBox3.Location = new System.Drawing.Point(60, 96);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(157, 61);
-            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CÓDIGO DEL PRODUCTO";
-            // 
-            // txtCodigoProd
-            // 
-            this.txtCodigoProd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCodigoProd.Location = new System.Drawing.Point(16, 28);
-            this.txtCodigoProd.Name = "txtCodigoProd";
-            this.txtCodigoProd.Size = new System.Drawing.Size(127, 20);
-            this.txtCodigoProd.TabIndex = 3;
-            this.txtCodigoProd.Leave += new System.EventHandler(this.txtCodigoProd_Leave);
             // 
             // groupBox2
             // 
@@ -92,7 +83,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(242, 248);
-            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DATOS A MODIFICAR";
             // 
@@ -215,7 +206,7 @@
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.RowTemplate.Height = 24;
             this.dgvProductos.Size = new System.Drawing.Size(780, 301);
-            this.dgvProductos.TabIndex = 3;
+            this.dgvProductos.TabIndex = 18;
             // 
             // groupBox1
             // 
@@ -227,7 +218,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(187, 82);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BUSCAR";
             // 
@@ -248,7 +239,7 @@
             this.txtProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(110, 20);
-            this.txtProducto.TabIndex = 1;
+            this.txtProducto.TabIndex = 0;
             // 
             // label1
             // 
@@ -260,6 +251,15 @@
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Producto:";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCodigo.Location = new System.Drawing.Point(15, 26);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(127, 20);
+            this.txtCodigo.TabIndex = 3;
             // 
             // frmModificarProductos
             // 
@@ -274,6 +274,7 @@
             this.Name = "frmModificarProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Productos";
+            this.Load += new System.EventHandler(this.frmModificarProductos_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -288,7 +289,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txtCodigoProd;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnModificar;
@@ -307,5 +307,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCodigo;
     }
 }

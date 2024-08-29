@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace pryGestorProductos
 {
-    internal class conexionBD
+    internal class clsconexionBD
     {
         // Definicion de comando, conexion y adaptador.
 
@@ -18,9 +18,9 @@ namespace pryGestorProductos
         OleDbDataAdapter adaptador;
         string cadena;
 
-        public conexionBD()
+        public clsconexionBD()
         {
-            cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=./Productos.accdb;";
+            cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='C:\Users\facu_\OneDrive\Escritorio\pryGestorProductos\pryGestorProductos\DataBase\Productos.accdb';";
         }
 
         /*public void Conectar()

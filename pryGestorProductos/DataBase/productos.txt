@@ -1,0 +1,17 @@
+Monitor LXT4,Monitor 144Hz base metálica,21000,5,Perifericos
+Mouse GX Pro,Mouse óptico de alta precisión, 8000 DPI,4500,12,Perifericos
+Teclado Mecánico XT8,Teclado mecánico retroiluminado con switches azules,12000,8,Perifericos
+Auriculares HyperSound,Auriculares con sonido envolvente 7.1 y micrófono retráctil,7500,10,Perifericos
+Silla Gamer Dragon X,Silla ergonómica con soporte lumbar ajustable,18000,6,Mobiliario
+SSD 1TB NVMe Ultra,SSD de 1TB NVMe con velocidades de lectura de hasta 3500MB/s,15000,15,Almacenamiento
+Memoria RAM 16GB DDR4,Memoria RAM de 16GB DDR4 3200MHz,6000,20,Memoria RAM
+Tarjeta Gráfica RTX 3060,Tarjeta gráfica NVIDIA RTX 3060 con 12GB GDDR6,85000,7,Tarjetas Gráficas
+Fuente de Poder 750W,Fuente de poder de 750W certificada 80+ Gold,7000,9,Componentes
+Placa Madre Z590,Placa madre Z590 con soporte para Intel 10ma y 11ma generación,22000,4,Placas Madre
+CPU Intel Core i7 11700K,Procesador Intel Core i7 de 11ma generación, 8 núcleos, 16 hilos,47000,5,Procesadores
+Refrigeración Líquida HydraCool,Sistema de refrigeración líquida para CPU con RGB,10500,8,Refrigeración
+Disco Duro Externo 2TB,Disco duro externo de 2TB USB 3.0,8500,12,Almacenamiento
+Webcam HD 1080p,Cámara web HD con micrófono incorporado,3500,11,Perifericos
+Impresora Multifuncional Canon,Impresora multifuncional con escáner y copiadora,18000,3,Impresoras
+Switch de Red Gigabit 8 Puertos,Switch de red gigabit con 8 puertos y soporte PoE,4500,10,Redes
+Router WiFi 6 AX3000,Router WiFi 6 dual band AX3000 con tecnología OFDMA,12000,7,Redes

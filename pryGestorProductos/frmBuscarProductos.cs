@@ -16,9 +16,9 @@ namespace pryGestorProductos
         {
             InitializeComponent();
         }
-        conexionBD ObjBuscar = new conexionBD();
+        clsconexionBD ObjBuscar = new clsconexionBD();
         private void frmBuscarProductos_Load(object sender, EventArgs e)
-        {
+        {          
             ObjBuscar.CargarCategorias(cmbCategoria);
         }
         private void btnCargar_Click(object sender, EventArgs e)
@@ -28,20 +28,41 @@ namespace pryGestorProductos
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string producto = txtProducto.Text;
-            ObjBuscar.BuscarProducto(dgvBuscarProductos, producto);
+            if (txtProducto.Text != "")
+            {
+                string producto = txtProducto.Text;
+                ObjBuscar.BuscarProducto(dgvBuscarProductos, producto);
+            }
+            else
+            {
+                MessageBox.Show("Debe colocar el dato a buscar", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            }        
         }
 
         private void btnBuscarCateg_Click(object sender, EventArgs e)
         {
-            string cate = cmbCategoria.Text;
-            ObjBuscar.BuscarCateg(dgvBuscarProductos, cate);
+            if (cmbCategoria.Text != "")
+            {
+                string cate = cmbCategoria.Text;
+                ObjBuscar.BuscarCateg(dgvBuscarProductos, cate);
+            }
+            else
+            {
+                MessageBox.Show("Debe colocar el dato a buscar", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnBuscarCod_Click(object sender, EventArgs e)
         {
-            int cod = Convert.ToInt16(txtCodigo.Text);
-            ObjBuscar.BuscarCodigo(dgvBuscarProductos, cod);
+            if (txtCodigo.Text != "")
+            {
+                int cod = Convert.ToInt16(txtCodigo.Text);
+                ObjBuscar.BuscarCodigo(dgvBuscarProductos, cod);
+            }
+            else
+            {
+                MessageBox.Show("Debe colocar el dato a buscar", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -51,6 +72,6 @@ namespace pryGestorProductos
             txtProducto.Text = "";
             cmbCategoria.Text = "";
             txtCodigo.Text = "";
-        }
+        }       
     }
 }

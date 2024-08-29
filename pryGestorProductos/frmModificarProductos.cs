@@ -14,19 +14,25 @@ namespace pryGestorProductos
     {
         public frmModificarProductos()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
-        conexionBD ObjModificarProd = new conexionBD();
+        clsconexionBD ObjModificarProd = new clsconexionBD();
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string producto = txtProducto.Text;
-            ObjModificarProd.BuscarProducto(dgvProductos, producto);
+            if (txtProducto.Text != "")
+            {
+                string producto = txtProducto.Text;
+                ObjModificarProd.BuscarProducto(dgvProductos, producto);
+            }else
+            {
+                MessageBox.Show("Debe colocar el nombre de algún producto", "Error");
+            }        
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            int codigo = Convert.ToInt32(txtCodigoProd.Text);
+            int codigo = Convert.ToInt32(txtCodigo.Text);
             string nombre = txtNombre.Text;
             string desc = rtxtDescripcion.Text;
             int precio = Convert.ToInt32(txtPrecio.Text);
@@ -38,8 +44,8 @@ namespace pryGestorProductos
         }
         public void Limpiar()
         {
-            txtCodigoProd.Enabled = true;
-            txtCodigoProd.Text = "";
+            txtCodigo.Enabled = true;
+            txtCodigo.Text = "";
             txtNombre.Text = "";
             rtxtDescripcion.Text = "";
             txtPrecio.Text = "";
@@ -54,7 +60,14 @@ namespace pryGestorProductos
 
         private void txtCodigoProd_Leave(object sender, EventArgs e)
         {
-            txtCodigoProd.Enabled = false;
+            //txtCodigoProd.Enabled = false;
+        }
+
+        private void frmModificarProductos_Load(object sender, EventArgs e)
+        {
+            txtProducto.TabIndex = 4;
+            btnBuscar.TabIndex = 5;
+            txtCodigo.TabIndex = 6;
         }
     }
 }

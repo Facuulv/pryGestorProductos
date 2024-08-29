@@ -17,7 +17,7 @@ namespace pryGestorProductos
             InitializeComponent();
         }
 
-        conexionBD ObjAgregarProd = new conexionBD();
+        clsconexionBD ObjAgregarProd = new clsconexionBD();
         private void btnCargar_Click(object sender, EventArgs e)
         {
             if (txtCodigo.Text != "" && txtNombre.Text != "" &&

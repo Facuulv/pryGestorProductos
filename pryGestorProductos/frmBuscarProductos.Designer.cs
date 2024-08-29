@@ -96,7 +96,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(609, 25);
+            this.btnLimpiar.Location = new System.Drawing.Point(579, 25);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(145, 46);
             this.btnLimpiar.TabIndex = 11;
@@ -107,7 +107,7 @@
             // btnCargar
             // 
             this.btnCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargar.Location = new System.Drawing.Point(458, 25);
+            this.btnCargar.Location = new System.Drawing.Point(428, 25);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(145, 46);
             this.btnCargar.TabIndex = 10;
@@ -164,7 +164,7 @@
             this.dgvBuscarProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBuscarProductos.Location = new System.Drawing.Point(232, 84);
             this.dgvBuscarProductos.Name = "dgvBuscarProductos";
-            this.dgvBuscarProductos.Size = new System.Drawing.Size(718, 250);
+            this.dgvBuscarProductos.Size = new System.Drawing.Size(652, 250);
             this.dgvBuscarProductos.TabIndex = 8;
             // 
             // groupBox1
@@ -216,7 +216,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(965, 352);
+            this.ClientSize = new System.Drawing.Size(896, 352);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);

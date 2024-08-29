@@ -14,9 +14,9 @@ namespace pryGestorProductos
     {
         public frmVentanaPrincipal()
         {
-            InitializeComponent();
+            InitializeComponent();          
         }
-        conexionBD ObjPrincipal = new conexionBD();
+        clsconexionBD ObjPrincipal = new clsconexionBD();
         private void btnListar_Click(object sender, EventArgs e)
         {
             ObjPrincipal.ListarProductos(dgvProductos);
