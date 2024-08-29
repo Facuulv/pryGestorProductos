@@ -1,0 +1,185 @@
+﻿namespace pryGestorProductos
+{
+    partial class frmVentanaPrincipal
+    {
+        /// <summary>
+        /// Variable del diseñador necesaria.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código generado por el Diseñador de Windows Forms
+
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.gESTIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.bUSCARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarProductosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(21, 166);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(119, 54);
+            this.btnLimpiar.TabIndex = 9;
+            this.btnLimpiar.Text = "LIMPIAR TABLA";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnListar
+            // 
+            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.Location = new System.Drawing.Point(21, 91);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(119, 54);
+            this.btnListar.TabIndex = 8;
+            this.btnListar.Text = "LISTAR PRODUCTOS";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // dgvProductos
+            // 
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.Location = new System.Drawing.Point(160, 52);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.Size = new System.Drawing.Size(750, 377);
+            this.dgvProductos.TabIndex = 7;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Info;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gESTIÓNToolStripMenuItem,
+            this.bUSCARToolStripMenuItem,
+            this.rEPORTESToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(937, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // gESTIÓNToolStripMenuItem
+            // 
+            this.gESTIÓNToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarProductosToolStripMenuItem,
+            this.modificarProductosToolStripMenuItem,
+            this.modificarProductosToolStripMenuItem1,
+            this.eliminarProductosToolStripMenuItem});
+            this.gESTIÓNToolStripMenuItem.Name = "gESTIÓNToolStripMenuItem";
+            this.gESTIÓNToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.gESTIÓNToolStripMenuItem.Text = "GESTIÓN";
+            // 
+            // agregarProductosToolStripMenuItem
+            // 
+            this.agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
+            this.agregarProductosToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.agregarProductosToolStripMenuItem.Text = "Agregar productos...";
+            this.agregarProductosToolStripMenuItem.Click += new System.EventHandler(this.agregarProductosToolStripMenuItem_Click);
+            // 
+            // modificarProductosToolStripMenuItem
+            // 
+            this.modificarProductosToolStripMenuItem.Name = "modificarProductosToolStripMenuItem";
+            this.modificarProductosToolStripMenuItem.Size = new System.Drawing.Size(179, 6);
+            // 
+            // bUSCARToolStripMenuItem
+            // 
+            this.bUSCARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productosToolStripMenuItem});
+            this.bUSCARToolStripMenuItem.Name = "bUSCARToolStripMenuItem";
+            this.bUSCARToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.bUSCARToolStripMenuItem.Text = "BUSCAR";
+            // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Text = "Productos...";
+            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
+            // 
+            // modificarProductosToolStripMenuItem1
+            // 
+            this.modificarProductosToolStripMenuItem1.Name = "modificarProductosToolStripMenuItem1";
+            this.modificarProductosToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
+            this.modificarProductosToolStripMenuItem1.Text = "Modificar productos...";
+            this.modificarProductosToolStripMenuItem1.Click += new System.EventHandler(this.modificarProductosToolStripMenuItem1_Click);
+            // 
+            // eliminarProductosToolStripMenuItem
+            // 
+            this.eliminarProductosToolStripMenuItem.Name = "eliminarProductosToolStripMenuItem";
+            this.eliminarProductosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.eliminarProductosToolStripMenuItem.Text = "Eliminar Productos...";
+            this.eliminarProductosToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductosToolStripMenuItem_Click);
+            // 
+            // rEPORTESToolStripMenuItem
+            // 
+            this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.rEPORTESToolStripMenuItem.Text = "REPORTES";
+            // 
+            // frmVentanaPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(937, 447);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.dgvProductos);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "frmVentanaPrincipal";
+            this.Text = "Gestor de Productos";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem gESTIÓNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator modificarProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bUSCARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarProductosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eliminarProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEPORTESToolStripMenuItem;
+    }
+}
+
