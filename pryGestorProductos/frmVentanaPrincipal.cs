@@ -14,7 +14,8 @@ namespace pryGestorProductos
     {
         public frmVentanaPrincipal()
         {
-            InitializeComponent();          
+            InitializeComponent();
+            //MessageBox.Show("Bienvenido al Gestor de Productos Hardware", "Bienvenida", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         clsconexionBD ObjPrincipal = new clsconexionBD();
         private void btnListar_Click(object sender, EventArgs e)
@@ -59,6 +60,17 @@ namespace pryGestorProductos
         {
             frmBuscarProductos frmBuscar = new frmBuscarProductos();
             frmBuscar.Show();
+        }
+
+        private void frmVentanaPrincipal_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void reportesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmReportes frmReportes = new frmReportes();
+            frmReportes.Show();
         }
     }
 }

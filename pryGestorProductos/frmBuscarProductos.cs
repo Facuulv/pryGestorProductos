@@ -20,10 +20,13 @@ namespace pryGestorProductos
         private void frmBuscarProductos_Load(object sender, EventArgs e)
         {          
             ObjBuscar.CargarCategorias(cmbCategoria);
+            optProducto.Select();
+            BotonesOpcion();           
         }
         private void btnCargar_Click(object sender, EventArgs e)
         {
             ObjBuscar.ListarProductos(dgvBuscarProductos);
+            AjustarCol();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -57,14 +60,19 @@ namespace pryGestorProductos
             if (txtCodigo.Text != "")
             {
                 int cod = Convert.ToInt16(txtCodigo.Text);
-                ObjBuscar.BuscarCodigo(dgvBuscarProductos, cod);
+                if (ObjBuscar.VerificarProd(cod))
+                {
+                    ObjBuscar.BuscarCodigo(dgvBuscarProductos, cod);
+                } else
+                {
+                    MessageBox.Show($"El producto con el codigo {cod} no existe", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }                             
             }
             else
             {
                 MessageBox.Show("Debe colocar el dato a buscar", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
         }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             dgvBuscarProductos.DataSource = null;
@@ -72,6 +80,54 @@ namespace pryGestorProductos
             txtProducto.Text = "";
             cmbCategoria.Text = "";
             txtCodigo.Text = "";
-        }       
+            optProducto.Select();
+        }   
+        private void optProducto_CheckedChanged(object sender, EventArgs e)
+        {
+            BotonesOpcion();
+        }
+
+        private void optCategoria_CheckedChanged(object sender, EventArgs e)
+        {
+            BotonesOpcion();
+        }
+
+        private void optCodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            BotonesOpcion();
+        }
+        public void BotonesOpcion()
+        {
+            gbProducto.Enabled = false;
+            gbCategoria.Enabled = false;
+            gbCodigo.Enabled = false;
+
+            if (optProducto.Checked)
+            {
+                gbProducto.Enabled = true;
+                cmbCategoria.Text = "";
+                txtCodigo.Text = "";
+            }
+            else if (optCategoria.Checked)
+            {
+                gbCategoria.Enabled = true;
+                txtProducto.Text = "";
+                txtCodigo.Text = "";
+            }
+            else if (optCodigo.Checked)
+            {
+                gbCodigo.Enabled = true;
+                txtProducto.Text = "";
+                cmbCategoria.Text = "";
+            }
+        }
+        public void AjustarCol()
+        {
+            dgvBuscarProductos.Columns["id_Codigo"].Width = 60;
+            dgvBuscarProductos.Columns["Nombre"].Width = 180;
+            dgvBuscarProductos.Columns["Descripcion"].Width = 220;
+            dgvBuscarProductos.Columns["Stock"].Width = 50;
+            dgvBuscarProductos.Columns["Categoria"].Width = 100;
+        }
     }
 }

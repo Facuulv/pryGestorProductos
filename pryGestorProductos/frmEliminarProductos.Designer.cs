@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.btnCargar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.txtCodigoE = new System.Windows.Forms.TextBox();
@@ -41,44 +40,34 @@
             // dgvProductos
             // 
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(218, 18);
+            this.dgvProductos.Location = new System.Drawing.Point(205, 18);
             this.dgvProductos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.RowTemplate.Height = 24;
-            this.dgvProductos.Size = new System.Drawing.Size(665, 219);
+            this.dgvProductos.Size = new System.Drawing.Size(750, 309);
             this.dgvProductos.TabIndex = 10;
-            // 
-            // btnCargar
-            // 
-            this.btnCargar.Location = new System.Drawing.Point(54, 18);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(119, 43);
-            this.btnCargar.TabIndex = 9;
-            this.btnCargar.Text = "Cargar productos";
-            this.btnCargar.UseVisualStyleBackColor = true;
-            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.txtCodigoE);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(20, 76);
+            this.groupBox2.Location = new System.Drawing.Point(11, 18);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(180, 90);
+            this.groupBox2.Size = new System.Drawing.Size(180, 100);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "ELIMINAR PRODUCTOS";
+            this.groupBox2.Text = "ELIMINAR PRODUCTO";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(34, 49);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(7, 49);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(108, 27);
+            this.btnEliminar.Size = new System.Drawing.Size(161, 37);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -110,13 +99,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(899, 254);
+            this.ClientSize = new System.Drawing.Size(967, 341);
             this.Controls.Add(this.dgvProductos);
-            this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.groupBox2);
             this.Name = "frmEliminarProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Productos";
+            this.Load += new System.EventHandler(this.frmEliminarProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -127,7 +116,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvProductos;
-        private System.Windows.Forms.Button btnCargar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtCodigoE;

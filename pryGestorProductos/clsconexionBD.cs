@@ -20,7 +20,7 @@ namespace pryGestorProductos
 
         public clsconexionBD()
         {
-            cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source='C:\Users\facu_\OneDrive\Escritorio\pryGestorProductos\pryGestorProductos\DataBase\Productos.accdb';";
+            cadena = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=../../DataBase\Productos.accdb;";
         }
 
         /*public void Conectar()
@@ -113,10 +113,12 @@ namespace pryGestorProductos
                 MessageBox.Show(ex.Message);
             }
         }
-        public void ModificarProducto(DataGridView dgvModificarProd, int cod, string nom, string desc, int precio, int stock, string cate)
+        public void ModificarProducto(DataGridView dgvModificarProd, string nom, string desc, int precio, int stock, string cate)
         {
             try
             {
+                int codigoProducto = int.Parse(dgvModificarProd.SelectedRows[0].Cells["id_Codigo"].Value.ToString());
+
                 conexion = new OleDbConnection(cadena);
                 comando = new OleDbCommand();
 
@@ -129,21 +131,13 @@ namespace pryGestorProductos
                 comando.Parameters.AddWithValue("@Precio", precio);
                 comando.Parameters.AddWithValue("@Stock", stock);
                 comando.Parameters.AddWithValue("@Categoria", cate);
-                comando.Parameters.AddWithValue("@id_Codigo", cod);
+                comando.Parameters.AddWithValue("@id_Codigo", codigoProducto);
 
 
                 conexion.Open();
-                //Ejecuta la consulta, si es mayor a 0 es porque encontró y modifico sino sale x el else
-                int filasAfectadas = comando.ExecuteNonQuery();
-                if (filasAfectadas > 0)
-                {
-                    MessageBox.Show("Se ha modificado el producto", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    BuscarProducto(dgvModificarProd, nom);
-                }
-                else
-                {
-                    MessageBox.Show("No se ha encontrado el producto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Se ha modificado el producto", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ListarProductos(dgvModificarProd);
             }
             catch (Exception ex)
             {

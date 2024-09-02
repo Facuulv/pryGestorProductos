@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +53,12 @@
     </Compile>
     <Compile Include="frmAgregarProductos.Designer.cs">
       <DependentUpon>frmAgregarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBienvenida.Designer.cs">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBuscarProductos.cs">
       <SubType>Form</SubType>
@@ -71,6 +78,12 @@
     <Compile Include="frmModificarProductos.Designer.cs">
       <DependentUpon>frmModificarProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +95,9 @@
     <EmbeddedResource Include="frmAgregarProductos.resx">
       <DependentUpon>frmAgregarProductos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBienvenida.resx">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscarProductos.resx">
       <DependentUpon>frmBuscarProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificarProductos.resx">
       <DependentUpon>frmModificarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVentanaPrincipal.resx">
       <DependentUpon>frmVentanaPrincipal.cs</DependentUpon>
@@ -102,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,6 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataBase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
