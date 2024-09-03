@@ -21,5 +21,17 @@ namespace pryGestorProductos
         {
             
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            frmVentanaPrincipal frmPrincipal = new frmVentanaPrincipal();
+            frmPrincipal.Show();
+            this.Hide();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

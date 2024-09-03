@@ -72,5 +72,15 @@ namespace pryGestorProductos
             frmReportes frmReportes = new frmReportes();
             frmReportes.Show();
         }
+
+        private void frmVentanaPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
