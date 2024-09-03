@@ -265,5 +265,25 @@ namespace pryGestorProductos
                 return false;
             }
         }
+        public DataTable DatosProductos()
+        {
+            // Tabla virtual que se llena con los datos Nombre y stock de la tabla productos
+            DataTable tablaProductos = new DataTable();
+            try
+            {
+                conexion = new OleDbConnection(cadena);
+                comando = new OleDbCommand();
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "SELECT Nombre, Stock FROM Productos";
+               
+                adaptador = new OleDbDataAdapter(comando);
+                adaptador.Fill(tablaProductos);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+            }
+            return tablaProductos;
+        }
     }
 }
