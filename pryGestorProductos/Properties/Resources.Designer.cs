@@ -73,6 +73,17 @@ namespace pryGestorProductos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap la_línea_negra_icono_para_los_datos_corrige_base_de_y_modificación_logotipo_símbolo_139248062__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("la-línea-negra-icono-para-los-datos-corrige-base-de-y-modificación-logotipo-símbo" +
+                        "lo-139248062 (1) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo2 {
             get {
                 object obj = ResourceManager.GetObject("logo2", resourceCulture);

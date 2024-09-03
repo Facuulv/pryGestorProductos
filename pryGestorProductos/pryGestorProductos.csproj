@@ -145,5 +145,8 @@
   <ItemGroup>
     <None Include="Resources\logo2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\la-línea-negra-icono-para-los-datos-corrige-base-de-y-modificación-logotipo-símbolo-139248062 %281%29 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
