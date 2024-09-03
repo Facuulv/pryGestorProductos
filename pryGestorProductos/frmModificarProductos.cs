@@ -18,6 +18,12 @@ namespace pryGestorProductos
         {
             InitializeComponent();           
         }
+        private string nombreSelec;
+        private string descSelec;
+        private string precioSelec;
+        private string stockSelec;
+        private string cateSelec;
+
         clsconexionBD ObjModificarProd = new clsconexionBD();
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -33,8 +39,17 @@ namespace pryGestorProductos
                 int stock = Convert.ToInt32(txtStock.Text);
                 string cate = txtCategoria.Text;
 
-                ObjModificarProd.ModificarProducto(dgvProductos, nombre, desc, precio, stock, cate);
-                Limpiar();
+                if (nombre != nombreSelec || desc != descSelec ||
+                    precio != Convert.ToInt32(precioSelec) || 
+                    stock != Convert.ToInt32(stockSelec) || 
+                    cate != cateSelec)
+                {
+                    ObjModificarProd.ModificarProducto(dgvProductos, nombre, desc, precio, stock, cate);
+                    Limpiar();
+                } else
+                {
+                    MessageBox.Show("No se ha realizado ningún cambio en los datos del producto", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                }              
             } else
             {
                 MessageBox.Show($"Debe seleccionar un producto para modificar sus valores", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -78,11 +93,11 @@ namespace pryGestorProductos
                 DataGridViewRow filaSelec = dgvProductos.Rows[e.RowIndex];
 
                 txtCodigo.Text = filaSelec.Cells["id_Codigo"].Value.ToString();
-                txtNombre.Text = filaSelec.Cells["Nombre"].Value.ToString();
-                rtxtDescripcion.Text = filaSelec.Cells["Descripcion"].Value.ToString();
-                txtPrecio.Text = filaSelec.Cells["Precio"].Value.ToString();
-                txtStock.Text = filaSelec.Cells["Stock"].Value.ToString();
-                txtCategoria.Text = filaSelec.Cells["Categoria"].Value.ToString();
+                txtNombre.Text = nombreSelec = filaSelec.Cells["Nombre"].Value.ToString();
+                rtxtDescripcion.Text = descSelec = filaSelec.Cells["Descripcion"].Value.ToString();
+                txtPrecio.Text = precioSelec = filaSelec.Cells["Precio"].Value.ToString();
+                txtStock.Text = stockSelec = filaSelec.Cells["Stock"].Value.ToString();
+                txtCategoria.Text = cateSelec = filaSelec.Cells["Categoria"].Value.ToString();
             }
         }
     }
