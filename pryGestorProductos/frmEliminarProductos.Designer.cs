@@ -43,9 +43,12 @@
             this.dgvProductos.Location = new System.Drawing.Point(205, 18);
             this.dgvProductos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.ReadOnly = true;
             this.dgvProductos.RowTemplate.Height = 24;
+            this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProductos.Size = new System.Drawing.Size(750, 309);
             this.dgvProductos.TabIndex = 10;
+            this.dgvProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellClick);
             // 
             // gbEliminar
             // 
@@ -83,6 +86,7 @@
             this.txtCodigoE.Name = "txtCodigoE";
             this.txtCodigoE.Size = new System.Drawing.Size(110, 22);
             this.txtCodigoE.TabIndex = 4;
+            this.txtCodigoE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 

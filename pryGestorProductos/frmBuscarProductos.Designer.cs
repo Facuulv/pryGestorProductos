@@ -171,6 +171,7 @@
             this.dgvBuscarProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBuscarProductos.Location = new System.Drawing.Point(222, 18);
             this.dgvBuscarProductos.Name = "dgvBuscarProductos";
+            this.dgvBuscarProductos.ReadOnly = true;
             this.dgvBuscarProductos.Size = new System.Drawing.Size(750, 363);
             this.dgvBuscarProductos.TabIndex = 8;
             // 
