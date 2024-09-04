@@ -284,6 +284,26 @@ namespace pryGestorProductos
                 MessageBox.Show("Error" + ex.Message);
             }
             return tablaProductos;
-        }       
+        }   
+        public DataTable DatosCategorias()
+        {
+            DataTable tablaCategorias = new DataTable();
+            try
+            {
+                conexion = new OleDbConnection(cadena);
+                comando = new OleDbCommand();
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "SELECT Categoria, COUNT(*) AS Cantidad FROM Productos GROUP BY Categoria";
+
+                adaptador = new OleDbDataAdapter(comando);
+                adaptador.Fill(tablaCategorias);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return tablaCategorias;
+        }
     }
 }

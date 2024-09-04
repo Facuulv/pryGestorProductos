@@ -101,5 +101,19 @@ namespace pryGestorProductos
                 txtCategoria.Text = cateSelec = filaSelec.Cells["Categoria"].Value.ToString();
             }
         }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar)) return;
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == '.') return;
+            e.Handled = true;
+        }
+
+        private void txtStock_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar)) return;
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == '.') return;
+            e.Handled = true;
+        }
     }
 }

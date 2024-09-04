@@ -16,52 +16,81 @@ namespace pryGestorProductos
         public frmReportes()
         {
             InitializeComponent();
-            ConfigurarGraficos();
-            CargarGraficos();
+            GraficoBarra();
+            CargarBarra();
+
+            GraficoTorta();
+            CargarTorta();
         }
         clsconexionBD ObjReportes = new clsconexionBD();
 
-        private void ConfigurarGraficos()
+        private void GraficoBarra()
         {
             ctBarra = new Chart
             {
-                Dock = DockStyle.Fill // Asegurar que se expanda para llenar el TabPage
+                Dock = DockStyle.Fill
             };
-            ChartArea ctArea = new ChartArea("AreaBarras")
+            ChartArea ctAreaBarra = new ChartArea("AreaBarras")
             {
-                AxisX = {
+                AxisX = 
+                {
                     Interval = 1,
-                    LabelStyle = {Angle = -45},                   
+                    LabelStyle = { Angle = -45 },
                     Title = "Productos",
                     TitleFont = new Font("Arial", 12, FontStyle.Bold)
                 },
-                AxisY =
+                AxisY = 
                 {
-                    Interval = 1, // Intervalo entre cantidades en el eje Y                    
-                    LabelStyle = { Format = "0" }, // Formato de etiquetas en el eje Y
+                    Interval = 1,
+                    LabelStyle = { Format = "0" },
                     Title = "Cantidad",
                     TitleFont = new Font("Arial", 12, FontStyle.Bold)
                 }
             };
-            ctBarra.ChartAreas.Add(ctArea);
-            Series series = new Series("Grafico")
+            ctBarra.ChartAreas.Add(ctAreaBarra);
+            Series seriesBarra = new Series("GraficoBarras")
             {
                 ChartType = SeriesChartType.Column,
                 XValueMember = "Nombre",
                 YValueMembers = "Stock",
             };
-
-            ctBarra.Series.Add(series);
+            ctBarra.Series.Add(seriesBarra);
             ctBarra.Legends.Clear();
             tpBarras.Controls.Add(ctBarra);
         }
-        private void CargarGraficos()
+        private void CargarBarra()
         {
             DataTable productos = ObjReportes.DatosProductos();
 
             // Asignar el DataSource al gráfico de barras y vincular los datos
             ctBarra.DataSource = productos;
-            ctBarra.DataBind();
+            ctBarra.DataBind();           
+        }
+        private void GraficoTorta()
+        {
+            ctTorta = new Chart
+            {
+                Dock = DockStyle.Fill
+            };
+            ChartArea ctAreaTorta = new ChartArea("AreaTorta");
+            ctTorta.ChartAreas.Add(ctAreaTorta);
+            Series seriesTorta = new Series("GraficoTorta")
+            {
+                ChartType = SeriesChartType.Pie,
+                XValueMember = "Categoria",
+                YValueMembers = "Cantidad",
+            };
+            seriesTorta.Label = "#VALX (#PERCENT)";
+            ctTorta.Series.Add(seriesTorta);
+            ctTorta.Legends.Clear();
+            tpTorta.Controls.Add(ctTorta);
+        }
+
+        private void CargarTorta()
+        {
+            DataTable categorias = ObjReportes.DatosCategorias();
+            ctTorta.DataSource = categorias;
+            ctTorta.DataBind();
         }
     }
 }

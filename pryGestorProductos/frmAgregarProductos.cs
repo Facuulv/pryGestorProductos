@@ -56,5 +56,26 @@ namespace pryGestorProductos
             txtStock.Text = "";
             txtCategoria.Text = "";
         }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar)) return;
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == '.') return;
+            e.Handled = true;
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar)) return;
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == '.') return;
+            e.Handled = true;
+        }
+
+        private void txtStock_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar)) return;
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == '.') return;
+            e.Handled = true;
+        }
     }
 }

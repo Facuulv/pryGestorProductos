@@ -107,7 +107,7 @@
             this.ctTorta.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.ctTorta.Legends.Add(legend2);
-            this.ctTorta.Location = new System.Drawing.Point(7, 7);
+            this.ctTorta.Location = new System.Drawing.Point(401, 114);
             this.ctTorta.Name = "ctTorta";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
@@ -116,6 +116,7 @@
             this.ctTorta.Size = new System.Drawing.Size(300, 300);
             this.ctTorta.TabIndex = 0;
             this.ctTorta.Text = "chart1";
+            this.ctTorta.Visible = false;
             // 
             // tpGrilla
             // 

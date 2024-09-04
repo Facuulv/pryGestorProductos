@@ -31,7 +31,7 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.msBarra = new System.Windows.Forms.MenuStrip();
             this.gESTIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
@@ -44,7 +44,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.gbPanel = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.msBarra.SuspendLayout();
             this.gbPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,18 +79,18 @@
             this.dgvProductos.Size = new System.Drawing.Size(750, 377);
             this.dgvProductos.TabIndex = 7;
             // 
-            // menuStrip1
+            // msBarra
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Beige;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msBarra.BackColor = System.Drawing.Color.Beige;
+            this.msBarra.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gESTIÓNToolStripMenuItem,
             this.bUSCARToolStripMenuItem,
             this.rEPORTESToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(937, 24);
-            this.menuStrip1.TabIndex = 10;
-            this.menuStrip1.Text = "menuStrip1";
+            this.msBarra.Location = new System.Drawing.Point(0, 0);
+            this.msBarra.Name = "msBarra";
+            this.msBarra.Size = new System.Drawing.Size(937, 24);
+            this.msBarra.TabIndex = 10;
+            this.msBarra.Text = "menuStrip1";
             // 
             // gESTIÓNToolStripMenuItem
             // 
@@ -191,16 +191,16 @@
             this.ClientSize = new System.Drawing.Size(937, 447);
             this.Controls.Add(this.gbPanel);
             this.Controls.Add(this.dgvProductos);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.msBarra);
+            this.MainMenuStrip = this.msBarra;
             this.Name = "frmVentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestor de Productos";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmVentanaPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.frmVentanaPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.msBarra.ResumeLayout(false);
+            this.msBarra.PerformLayout();
             this.gbPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView dgvProductos;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip msBarra;
         private System.Windows.Forms.ToolStripMenuItem gESTIÓNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator modificarProductosToolStripMenuItem;
