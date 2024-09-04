@@ -72,17 +72,38 @@ namespace pryGestorProductos
             {
                 Dock = DockStyle.Fill
             };
-            ChartArea ctAreaTorta = new ChartArea("AreaTorta");
+
+            ctTorta.Titles.Add(new Title
+            {
+                Text = "Grafico tipo Torta según las Categorías de los Productos",
+                Font = new Font("Arial", 14, FontStyle.Bold),
+                ForeColor = Color.Black,
+                Docking = Docking.Top, // Titulo lo posiciona arriba
+                Position = new ElementPosition(0, 0, 100, 10)
+            });
+
+            Legend legend = new Legend
+            {
+                Docking = Docking.Right, // Posiciona la leyenda a la derecha
+                Font = new Font("Arial", 16, FontStyle.Bold),
+                Alignment = StringAlignment.Center,
+                IsTextAutoFit = true,
+                Position = new ElementPosition(75, 8, 20, 50)
+            };
+            ctTorta.Legends.Add(legend);
+
+            ChartArea ctAreaTorta = new ChartArea("AreaTorta") { Position = new ElementPosition(0, 8, 100, 90) };
             ctTorta.ChartAreas.Add(ctAreaTorta);
             Series seriesTorta = new Series("GraficoTorta")
             {
                 ChartType = SeriesChartType.Pie,
+                Font = new Font("Arial", 12, FontStyle.Bold),
                 XValueMember = "Categoria",
                 YValueMembers = "Cantidad",
+                Label = "#PERCENT",
+                LegendText = "#VALX",               
             };
-            seriesTorta.Label = "#VALX (#PERCENT)";
-            ctTorta.Series.Add(seriesTorta);
-            ctTorta.Legends.Clear();
+            ctTorta.Series.Add(seriesTorta);           
             tpTorta.Controls.Add(ctTorta);
         }
 
