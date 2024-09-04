@@ -43,6 +43,7 @@
             this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
             this.gbPanel = new System.Windows.Forms.GroupBox();
+            this.btnReposicion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.msBarra.SuspendLayout();
             this.gbPanel.SuspendLayout();
@@ -51,7 +52,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(6, 94);
+            this.btnLimpiar.Location = new System.Drawing.Point(6, 91);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(119, 54);
             this.btnLimpiar.TabIndex = 9;
@@ -162,7 +163,7 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(6, 166);
+            this.btnSalir.Location = new System.Drawing.Point(6, 235);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(119, 54);
             this.btnSalir.TabIndex = 11;
@@ -172,16 +173,28 @@
             // 
             // gbPanel
             // 
+            this.gbPanel.Controls.Add(this.btnReposicion);
             this.gbPanel.Controls.Add(this.btnListar);
             this.gbPanel.Controls.Add(this.btnSalir);
             this.gbPanel.Controls.Add(this.btnLimpiar);
             this.gbPanel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPanel.Location = new System.Drawing.Point(12, 52);
             this.gbPanel.Name = "gbPanel";
-            this.gbPanel.Size = new System.Drawing.Size(130, 232);
+            this.gbPanel.Size = new System.Drawing.Size(130, 307);
             this.gbPanel.TabIndex = 12;
             this.gbPanel.TabStop = false;
             this.gbPanel.Text = "PANEL DE CONTROL";
+            // 
+            // btnReposicion
+            // 
+            this.btnReposicion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReposicion.Location = new System.Drawing.Point(6, 163);
+            this.btnReposicion.Name = "btnReposicion";
+            this.btnReposicion.Size = new System.Drawing.Size(119, 54);
+            this.btnReposicion.TabIndex = 13;
+            this.btnReposicion.Text = "REPOSICIÓN";
+            this.btnReposicion.UseVisualStyleBackColor = true;
+            this.btnReposicion.Click += new System.EventHandler(this.btnReposicion_Click);
             // 
             // frmVentanaPrincipal
             // 
@@ -224,6 +237,7 @@
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.GroupBox gbPanel;
+        private System.Windows.Forms.Button btnReposicion;
     }
 }
 

@@ -265,6 +265,37 @@ namespace pryGestorProductos
                 return false;
             }
         }
+        public void VerificarStockCero()
+        {
+            try
+            {
+                conexion = new OleDbConnection(cadena);
+                comando = new OleDbCommand();
+
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "SELECT Nombre FROM Productos WHERE Stock <= 0";
+
+                DataTable tablaProductos = new DataTable();
+                OleDbDataAdapter adaptador = new OleDbDataAdapter(comando);
+                adaptador.Fill(tablaProductos);
+
+                //Si hay productos en la tabla virtual entra y larga el mensaje de reposicion
+                if (tablaProductos.Rows.Count > 0)
+                {
+                    string mensaje = "Los siguientes productos están sin stock y necesitan reposición:\n";
+                    foreach (DataRow row in tablaProductos.Rows)
+                    {
+                        mensaje += $"- {row["Nombre"]}\n";
+                    }
+                    MessageBox.Show(mensaje, "Alerta de Reposición", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         public DataTable DatosProductos()
         {
             // Tabla virtual que se llena con los datos Nombre y stock de la tabla productos

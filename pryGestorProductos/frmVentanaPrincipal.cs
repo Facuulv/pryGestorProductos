@@ -83,5 +83,10 @@ namespace pryGestorProductos
         {
             Application.Exit();
         }
+
+        private void btnReposicion_Click(object sender, EventArgs e)
+        {
+            ObjPrincipal.VerificarStockCero();
+        }
     }
 }
