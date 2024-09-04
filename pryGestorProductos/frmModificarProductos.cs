@@ -29,7 +29,7 @@ namespace pryGestorProductos
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (txtCodigo.Text != "" && txtNombre.Text != "" &&
-                rtxtDescripcion.Text != "" && txtPrecio.Text != "" &&
+                rtxtDescripcion.Text != "" && txtPrecio.Text != ""  &&
                 txtStock.Text != "" && txtCategoria.Text != "")
             {
                 int codigo = Convert.ToInt32(txtCodigo.Text);

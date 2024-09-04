@@ -37,7 +37,7 @@ namespace pryGestorProductos
                 },
                 AxisY =
                 {
-                    Interval = 1, // Intervalo entre etiquetas en el eje Y                    
+                    Interval = 1, // Intervalo entre cantidades en el eje Y                    
                     LabelStyle = { Format = "0" }, // Formato de etiquetas en el eje Y
                     Title = "Cantidad",
                     TitleFont = new Font("Arial", 12, FontStyle.Bold)

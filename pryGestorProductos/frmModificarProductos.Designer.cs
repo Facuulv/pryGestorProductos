@@ -74,6 +74,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.btnLimpiar);
@@ -229,7 +230,7 @@
             this.pictureBox1.Image = global::pryGestorProductos.Properties.Resources.la_línea_negra_icono_para_los_datos_corrige_base_de_y_modificación_logotipo_símbolo_139248062__1___1_;
             this.pictureBox1.Location = new System.Drawing.Point(9, 18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 67);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 67);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 

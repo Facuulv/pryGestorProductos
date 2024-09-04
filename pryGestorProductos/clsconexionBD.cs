@@ -284,6 +284,6 @@ namespace pryGestorProductos
                 MessageBox.Show("Error" + ex.Message);
             }
             return tablaProductos;
-        }
+        }       
     }
 }
