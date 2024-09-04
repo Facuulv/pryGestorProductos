@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbEliminar = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.txtCodigoE = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.gbEliminar.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvProductos
@@ -47,20 +47,20 @@
             this.dgvProductos.Size = new System.Drawing.Size(750, 309);
             this.dgvProductos.TabIndex = 10;
             // 
-            // groupBox2
+            // gbEliminar
             // 
-            this.groupBox2.Controls.Add(this.btnEliminar);
-            this.groupBox2.Controls.Add(this.txtCodigoE);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(11, 18);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(180, 97);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "ELIMINAR PRODUCTO";
+            this.gbEliminar.Controls.Add(this.btnEliminar);
+            this.gbEliminar.Controls.Add(this.txtCodigoE);
+            this.gbEliminar.Controls.Add(this.label2);
+            this.gbEliminar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbEliminar.Location = new System.Drawing.Point(11, 18);
+            this.gbEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.gbEliminar.Name = "gbEliminar";
+            this.gbEliminar.Padding = new System.Windows.Forms.Padding(2);
+            this.gbEliminar.Size = new System.Drawing.Size(180, 97);
+            this.gbEliminar.TabIndex = 8;
+            this.gbEliminar.TabStop = false;
+            this.gbEliminar.Text = "ELIMINAR PRODUCTO";
             // 
             // btnEliminar
             // 
@@ -102,14 +102,14 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(967, 341);
             this.Controls.Add(this.dgvProductos);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gbEliminar);
             this.Name = "frmEliminarProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Productos";
             this.Load += new System.EventHandler(this.frmEliminarProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbEliminar.ResumeLayout(false);
+            this.gbEliminar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -117,7 +117,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvProductos;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbEliminar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtCodigoE;
         private System.Windows.Forms.Label label2;

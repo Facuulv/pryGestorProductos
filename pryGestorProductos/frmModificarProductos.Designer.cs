@@ -30,8 +30,7 @@
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gbModificar = new System.Windows.Forms.GroupBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.rtxtDescripcion = new System.Windows.Forms.RichTextBox();
@@ -45,10 +44,11 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbModificar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -73,41 +73,32 @@
             this.txtCodigo.TabIndex = 3;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox2
+            // gbModificar
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.btnLimpiar);
-            this.groupBox2.Controls.Add(this.btnModificar);
-            this.groupBox2.Controls.Add(this.rtxtDescripcion);
-            this.groupBox2.Controls.Add(this.txtStock);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtCategoria);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.txtPrecio);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.txtNombre);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(11, 11);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(240, 326);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "DATOS A MODIFICAR";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::pryGestorProductos.Properties.Resources.la_línea_negra_icono_para_los_datos_corrige_base_de_y_modificación_logotipo_símbolo_139248062__1___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 67);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.gbModificar.BackColor = System.Drawing.SystemColors.Control;
+            this.gbModificar.Controls.Add(this.pictureBox1);
+            this.gbModificar.Controls.Add(this.groupBox3);
+            this.gbModificar.Controls.Add(this.btnLimpiar);
+            this.gbModificar.Controls.Add(this.btnModificar);
+            this.gbModificar.Controls.Add(this.rtxtDescripcion);
+            this.gbModificar.Controls.Add(this.txtStock);
+            this.gbModificar.Controls.Add(this.label6);
+            this.gbModificar.Controls.Add(this.txtCategoria);
+            this.gbModificar.Controls.Add(this.label5);
+            this.gbModificar.Controls.Add(this.txtPrecio);
+            this.gbModificar.Controls.Add(this.label4);
+            this.gbModificar.Controls.Add(this.label3);
+            this.gbModificar.Controls.Add(this.txtNombre);
+            this.gbModificar.Controls.Add(this.label2);
+            this.gbModificar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbModificar.Location = new System.Drawing.Point(11, 11);
+            this.gbModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.gbModificar.Name = "gbModificar";
+            this.gbModificar.Padding = new System.Windows.Forms.Padding(2);
+            this.gbModificar.Size = new System.Drawing.Size(240, 326);
+            this.gbModificar.TabIndex = 14;
+            this.gbModificar.TabStop = false;
+            this.gbModificar.Text = "DATOS A MODIFICAR";
             // 
             // btnLimpiar
             // 
@@ -236,13 +227,22 @@
             this.dgvProductos.TabIndex = 11;
             this.dgvProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::pryGestorProductos.Properties.Resources.modificar2;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 67);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmModificarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1033, 351);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gbModificar);
             this.Controls.Add(this.dgvProductos);
             this.Name = "frmModificarProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -250,10 +250,10 @@
             this.Load += new System.EventHandler(this.frmModificarProductos_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbModificar.ResumeLayout(false);
+            this.gbModificar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -261,7 +261,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbModificar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.RichTextBox rtxtDescripcion;

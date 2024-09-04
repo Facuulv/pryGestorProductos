@@ -43,8 +43,8 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gbBusqueda = new System.Windows.Forms.GroupBox();
+            this.gbFiltros = new System.Windows.Forms.GroupBox();
             this.optCodigo = new System.Windows.Forms.RadioButton();
             this.optCategoria = new System.Windows.Forms.RadioButton();
             this.optProducto = new System.Windows.Forms.RadioButton();
@@ -52,8 +52,8 @@
             this.gbCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarProductos)).BeginInit();
             this.gbProducto.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.gbBusqueda.SuspendLayout();
+            this.gbFiltros.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbCodigo
@@ -218,31 +218,31 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Producto:";
             // 
-            // groupBox4
+            // gbBusqueda
             // 
-            this.groupBox4.Controls.Add(this.groupBox5);
-            this.groupBox4.Controls.Add(this.gbCodigo);
-            this.groupBox4.Controls.Add(this.gbProducto);
-            this.groupBox4.Controls.Add(this.gbCategoria);
-            this.groupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(1, 12);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(215, 380);
-            this.groupBox4.TabIndex = 13;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "BÚSQUEDA DE PRODUCTOS";
+            this.gbBusqueda.Controls.Add(this.gbFiltros);
+            this.gbBusqueda.Controls.Add(this.gbCodigo);
+            this.gbBusqueda.Controls.Add(this.gbProducto);
+            this.gbBusqueda.Controls.Add(this.gbCategoria);
+            this.gbBusqueda.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbBusqueda.Location = new System.Drawing.Point(1, 12);
+            this.gbBusqueda.Name = "gbBusqueda";
+            this.gbBusqueda.Size = new System.Drawing.Size(215, 380);
+            this.gbBusqueda.TabIndex = 13;
+            this.gbBusqueda.TabStop = false;
+            this.gbBusqueda.Text = "BÚSQUEDA DE PRODUCTOS";
             // 
-            // groupBox5
+            // gbFiltros
             // 
-            this.groupBox5.Controls.Add(this.optCodigo);
-            this.groupBox5.Controls.Add(this.optCategoria);
-            this.groupBox5.Controls.Add(this.optProducto);
-            this.groupBox5.Location = new System.Drawing.Point(6, 19);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(124, 94);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "FILTROS";
+            this.gbFiltros.Controls.Add(this.optCodigo);
+            this.gbFiltros.Controls.Add(this.optCategoria);
+            this.gbFiltros.Controls.Add(this.optProducto);
+            this.gbFiltros.Location = new System.Drawing.Point(6, 19);
+            this.gbFiltros.Name = "gbFiltros";
+            this.gbFiltros.Size = new System.Drawing.Size(124, 94);
+            this.gbFiltros.TabIndex = 0;
+            this.gbFiltros.TabStop = false;
+            this.gbFiltros.Text = "FILTROS";
             // 
             // optCodigo
             // 
@@ -289,7 +289,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(983, 436);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.gbBusqueda);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.dgvBuscarProductos);
@@ -304,9 +304,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarProductos)).EndInit();
             this.gbProducto.ResumeLayout(false);
             this.gbProducto.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.gbBusqueda.ResumeLayout(false);
+            this.gbFiltros.ResumeLayout(false);
+            this.gbFiltros.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -328,8 +328,8 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtProducto;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox gbBusqueda;
+        private System.Windows.Forms.GroupBox gbFiltros;
         private System.Windows.Forms.RadioButton optCodigo;
         private System.Windows.Forms.RadioButton optCategoria;
         private System.Windows.Forms.RadioButton optProducto;
