@@ -39,6 +39,7 @@ namespace pryGestorProductos
         }
         public void AjustarCol()
         {
+            dgvProductos.Columns[0].HeaderText = "Código";
             dgvProductos.Columns["id_Codigo"].Width = 60;
             dgvProductos.Columns["Nombre"].Width = 180;
             dgvProductos.Columns["Descripcion"].Width = 220;

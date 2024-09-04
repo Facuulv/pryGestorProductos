@@ -204,7 +204,7 @@ namespace pryGestorProductos
 
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "SELECT * FROM Productos WHERE Categoria = @Categoria";
+                comando.CommandText = "SELECT * FROM Productos WHERE Categoria = @Categoria ORDER BY id_Codigo";
 
                 comando.Parameters.AddWithValue("@Categoria", cate);
                 DataTable tablaProductos = new DataTable();

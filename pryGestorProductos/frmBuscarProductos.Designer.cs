@@ -45,9 +45,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.optProducto = new System.Windows.Forms.RadioButton();
-            this.optCategoria = new System.Windows.Forms.RadioButton();
             this.optCodigo = new System.Windows.Forms.RadioButton();
+            this.optCategoria = new System.Windows.Forms.RadioButton();
+            this.optProducto = new System.Windows.Forms.RadioButton();
             this.gbCodigo.SuspendLayout();
             this.gbCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarProductos)).BeginInit();
@@ -71,6 +71,7 @@
             // 
             // btnBuscarCod
             // 
+            this.btnBuscarCod.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarCod.Location = new System.Drawing.Point(76, 46);
             this.btnBuscarCod.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarCod.Name = "btnBuscarCod";
@@ -85,23 +86,23 @@
             this.txtCodigo.Location = new System.Drawing.Point(76, 22);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(121, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(121, 22);
             this.txtCodigo.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 25);
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(4, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Código:";
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.Location = new System.Drawing.Point(610, 387);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(145, 46);
@@ -112,7 +113,7 @@
             // 
             // btnCargar
             // 
-            this.btnCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.Location = new System.Drawing.Point(440, 387);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(145, 46);
@@ -139,11 +140,12 @@
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(76, 22);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(121, 21);
+            this.cmbCategoria.Size = new System.Drawing.Size(121, 24);
             this.cmbCategoria.TabIndex = 3;
             // 
             // btnBuscarCateg
             // 
+            this.btnBuscarCateg.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarCateg.Location = new System.Drawing.Point(76, 48);
             this.btnBuscarCateg.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarCateg.Name = "btnBuscarCateg";
@@ -156,11 +158,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 25);
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(73, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Categoría:";
             // 
@@ -187,6 +189,7 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Location = new System.Drawing.Point(76, 41);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
@@ -201,17 +204,17 @@
             this.txtProducto.Location = new System.Drawing.Point(76, 17);
             this.txtProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(121, 20);
+            this.txtProducto.Size = new System.Drawing.Size(121, 22);
             this.txtProducto.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 20);
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Producto:";
             // 
@@ -221,6 +224,7 @@
             this.groupBox4.Controls.Add(this.gbCodigo);
             this.groupBox4.Controls.Add(this.gbProducto);
             this.groupBox4.Controls.Add(this.gbCategoria);
+            this.groupBox4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(1, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(215, 380);
@@ -235,49 +239,49 @@
             this.groupBox5.Controls.Add(this.optProducto);
             this.groupBox5.Location = new System.Drawing.Point(6, 19);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(117, 94);
+            this.groupBox5.Size = new System.Drawing.Size(124, 94);
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "FILTROS";
             // 
-            // optProducto
+            // optCodigo
             // 
-            this.optProducto.AutoSize = true;
-            this.optProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optProducto.Location = new System.Drawing.Point(6, 19);
-            this.optProducto.Name = "optProducto";
-            this.optProducto.Size = new System.Drawing.Size(99, 17);
-            this.optProducto.TabIndex = 0;
-            this.optProducto.TabStop = true;
-            this.optProducto.Text = "Por Producto";
-            this.optProducto.UseVisualStyleBackColor = true;
-            this.optProducto.CheckedChanged += new System.EventHandler(this.optProducto_CheckedChanged);
+            this.optCodigo.AutoSize = true;
+            this.optCodigo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optCodigo.Location = new System.Drawing.Point(6, 65);
+            this.optCodigo.Name = "optCodigo";
+            this.optCodigo.Size = new System.Drawing.Size(96, 20);
+            this.optCodigo.TabIndex = 2;
+            this.optCodigo.TabStop = true;
+            this.optCodigo.Text = "Por Código";
+            this.optCodigo.UseVisualStyleBackColor = true;
+            this.optCodigo.CheckedChanged += new System.EventHandler(this.optCodigo_CheckedChanged);
             // 
             // optCategoria
             // 
             this.optCategoria.AutoSize = true;
-            this.optCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optCategoria.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optCategoria.Location = new System.Drawing.Point(6, 42);
             this.optCategoria.Name = "optCategoria";
-            this.optCategoria.Size = new System.Drawing.Size(104, 17);
+            this.optCategoria.Size = new System.Drawing.Size(113, 20);
             this.optCategoria.TabIndex = 1;
             this.optCategoria.TabStop = true;
             this.optCategoria.Text = "Por Categoría";
             this.optCategoria.UseVisualStyleBackColor = true;
             this.optCategoria.CheckedChanged += new System.EventHandler(this.optCategoria_CheckedChanged);
             // 
-            // optCodigo
+            // optProducto
             // 
-            this.optCodigo.AutoSize = true;
-            this.optCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optCodigo.Location = new System.Drawing.Point(6, 65);
-            this.optCodigo.Name = "optCodigo";
-            this.optCodigo.Size = new System.Drawing.Size(87, 17);
-            this.optCodigo.TabIndex = 2;
-            this.optCodigo.TabStop = true;
-            this.optCodigo.Text = "Por Código";
-            this.optCodigo.UseVisualStyleBackColor = true;
-            this.optCodigo.CheckedChanged += new System.EventHandler(this.optCodigo_CheckedChanged);
+            this.optProducto.AutoSize = true;
+            this.optProducto.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optProducto.Location = new System.Drawing.Point(6, 19);
+            this.optProducto.Name = "optProducto";
+            this.optProducto.Size = new System.Drawing.Size(108, 20);
+            this.optProducto.TabIndex = 0;
+            this.optProducto.TabStop = true;
+            this.optProducto.Text = "Por Producto";
+            this.optProducto.UseVisualStyleBackColor = true;
+            this.optProducto.CheckedChanged += new System.EventHandler(this.optProducto_CheckedChanged);
             // 
             // frmBuscarProductos
             // 

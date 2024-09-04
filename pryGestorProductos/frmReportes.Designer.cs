@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tcReportes = new System.Windows.Forms.TabControl();
             this.tpBarras = new System.Windows.Forms.TabPage();
-            this.tpTorta = new System.Windows.Forms.TabPage();
-            this.tpGrilla = new System.Windows.Forms.TabPage();
             this.ctBarra = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tpTorta = new System.Windows.Forms.TabPage();
             this.ctTorta = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tpGrilla = new System.Windows.Forms.TabPage();
             this.dgvReportes = new System.Windows.Forms.DataGridView();
             this.tcReportes.SuspendLayout();
             this.tpBarras.SuspendLayout();
-            this.tpTorta.SuspendLayout();
-            this.tpGrilla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctBarra)).BeginInit();
+            this.tpTorta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctTorta)).BeginInit();
+            this.tpGrilla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@
             this.tcReportes.Controls.Add(this.tpBarras);
             this.tcReportes.Controls.Add(this.tpTorta);
             this.tcReportes.Controls.Add(this.tpGrilla);
-            this.tcReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tcReportes.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcReportes.Location = new System.Drawing.Point(12, 12);
             this.tcReportes.Name = "tcReportes";
             this.tcReportes.SelectedIndex = 0;
@@ -73,59 +73,59 @@
             this.tpBarras.Text = "Grafico de barras";
             this.tpBarras.UseVisualStyleBackColor = true;
             // 
-            // tpTorta
-            // 
-            this.tpTorta.Controls.Add(this.ctTorta);
-            this.tpTorta.Location = new System.Drawing.Point(4, 22);
-            this.tpTorta.Name = "tpTorta";
-            this.tpTorta.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTorta.Size = new System.Drawing.Size(1156, 581);
-            this.tpTorta.TabIndex = 1;
-            this.tpTorta.Text = "Grafico torta";
-            this.tpTorta.UseVisualStyleBackColor = true;
-            // 
-            // tpGrilla
-            // 
-            this.tpGrilla.Controls.Add(this.dgvReportes);
-            this.tpGrilla.Location = new System.Drawing.Point(4, 22);
-            this.tpGrilla.Name = "tpGrilla";
-            this.tpGrilla.Size = new System.Drawing.Size(1156, 581);
-            this.tpGrilla.TabIndex = 2;
-            this.tpGrilla.Text = "Grilla";
-            this.tpGrilla.UseVisualStyleBackColor = true;
-            // 
             // ctBarra
             // 
-            chartArea19.Name = "ChartArea1";
-            this.ctBarra.ChartAreas.Add(chartArea19);
-            legend19.Name = "Legend1";
-            this.ctBarra.Legends.Add(legend19);
+            chartArea1.Name = "ChartArea1";
+            this.ctBarra.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.ctBarra.Legends.Add(legend1);
             this.ctBarra.Location = new System.Drawing.Point(443, 158);
             this.ctBarra.Name = "ctBarra";
-            series19.ChartArea = "ChartArea1";
-            series19.Legend = "Legend1";
-            series19.Name = "Series1";
-            this.ctBarra.Series.Add(series19);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.ctBarra.Series.Add(series1);
             this.ctBarra.Size = new System.Drawing.Size(300, 300);
             this.ctBarra.TabIndex = 0;
             this.ctBarra.Text = "chart1";
             this.ctBarra.Visible = false;
             // 
+            // tpTorta
+            // 
+            this.tpTorta.Controls.Add(this.ctTorta);
+            this.tpTorta.Location = new System.Drawing.Point(4, 25);
+            this.tpTorta.Name = "tpTorta";
+            this.tpTorta.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTorta.Size = new System.Drawing.Size(1156, 578);
+            this.tpTorta.TabIndex = 1;
+            this.tpTorta.Text = "Grafico torta";
+            this.tpTorta.UseVisualStyleBackColor = true;
+            // 
             // ctTorta
             // 
-            chartArea20.Name = "ChartArea1";
-            this.ctTorta.ChartAreas.Add(chartArea20);
-            legend20.Name = "Legend1";
-            this.ctTorta.Legends.Add(legend20);
+            chartArea2.Name = "ChartArea1";
+            this.ctTorta.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.ctTorta.Legends.Add(legend2);
             this.ctTorta.Location = new System.Drawing.Point(7, 7);
             this.ctTorta.Name = "ctTorta";
-            series20.ChartArea = "ChartArea1";
-            series20.Legend = "Legend1";
-            series20.Name = "Series1";
-            this.ctTorta.Series.Add(series20);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.ctTorta.Series.Add(series2);
             this.ctTorta.Size = new System.Drawing.Size(300, 300);
             this.ctTorta.TabIndex = 0;
             this.ctTorta.Text = "chart1";
+            // 
+            // tpGrilla
+            // 
+            this.tpGrilla.Controls.Add(this.dgvReportes);
+            this.tpGrilla.Location = new System.Drawing.Point(4, 25);
+            this.tpGrilla.Name = "tpGrilla";
+            this.tpGrilla.Size = new System.Drawing.Size(1156, 578);
+            this.tpGrilla.TabIndex = 2;
+            this.tpGrilla.Text = "Grilla";
+            this.tpGrilla.UseVisualStyleBackColor = true;
             // 
             // dgvReportes
             // 
@@ -147,10 +147,10 @@
             this.Text = "Reportes - Listados";
             this.tcReportes.ResumeLayout(false);
             this.tpBarras.ResumeLayout(false);
-            this.tpTorta.ResumeLayout(false);
-            this.tpGrilla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ctBarra)).EndInit();
+            this.tpTorta.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ctTorta)).EndInit();
+            this.tpGrilla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReportes)).EndInit();
             this.ResumeLayout(false);
 
