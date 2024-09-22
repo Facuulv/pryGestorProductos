@@ -68,6 +68,7 @@
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodigo.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Location = new System.Drawing.Point(28, 19);
+            this.txtCodigo.MaxLength = 10;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(62, 32);
             this.txtCodigo.TabIndex = 3;
@@ -143,10 +144,12 @@
             this.rtxtDescripcion.Size = new System.Drawing.Size(144, 45);
             this.rtxtDescripcion.TabIndex = 2;
             this.rtxtDescripcion.Text = "";
+            this.rtxtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtxtDescripcion_KeyPress);
             // 
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(84, 213);
+            this.txtStock.MaxLength = 10;
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(68, 22);
             this.txtStock.TabIndex = 4;
@@ -168,6 +171,7 @@
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(144, 22);
             this.txtCategoria.TabIndex = 5;
+            this.txtCategoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCategoria_KeyPress);
             // 
             // label5
             // 
@@ -182,6 +186,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(84, 183);
+            this.txtPrecio.MaxLength = 10;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(68, 22);
             this.txtPrecio.TabIndex = 3;
@@ -213,6 +218,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(144, 22);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label2
             // 

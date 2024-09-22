@@ -33,17 +33,19 @@
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.msBarra = new System.Windows.Forms.MenuStrip();
             this.gESTIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
-            this.modificarProductosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.bUSCARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
             this.gbPanel = new System.Windows.Forms.GroupBox();
             this.btnReposicion = new System.Windows.Forms.Button();
+            this.agregarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarProductosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.msBarra.SuspendLayout();
             this.gbPanel.SuspendLayout();
@@ -82,81 +84,81 @@
             // 
             // msBarra
             // 
+            this.msBarra.AutoSize = false;
             this.msBarra.BackColor = System.Drawing.Color.Beige;
             this.msBarra.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gESTIÓNToolStripMenuItem,
+            this.toolStripTextBox1,
             this.bUSCARToolStripMenuItem,
+            this.toolStripTextBox2,
             this.rEPORTESToolStripMenuItem});
             this.msBarra.Location = new System.Drawing.Point(0, 0);
             this.msBarra.Name = "msBarra";
-            this.msBarra.Size = new System.Drawing.Size(937, 24);
+            this.msBarra.Size = new System.Drawing.Size(937, 49);
             this.msBarra.TabIndex = 10;
             this.msBarra.Text = "menuStrip1";
             // 
             // gESTIÓNToolStripMenuItem
             // 
+            this.gESTIÓNToolStripMenuItem.BackColor = System.Drawing.Color.AntiqueWhite;
             this.gESTIÓNToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarProductosToolStripMenuItem,
             this.modificarProductosToolStripMenuItem,
             this.modificarProductosToolStripMenuItem1,
             this.eliminarProductosToolStripMenuItem});
+            this.gESTIÓNToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gESTIÓNToolStripMenuItem.Name = "gESTIÓNToolStripMenuItem";
-            this.gESTIÓNToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.gESTIÓNToolStripMenuItem.Size = new System.Drawing.Size(70, 45);
             this.gESTIÓNToolStripMenuItem.Text = "GESTIÓN";
-            // 
-            // agregarProductosToolStripMenuItem
-            // 
-            this.agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
-            this.agregarProductosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.agregarProductosToolStripMenuItem.Text = "Agregar productos...";
-            this.agregarProductosToolStripMenuItem.Click += new System.EventHandler(this.agregarProductosToolStripMenuItem_Click);
             // 
             // modificarProductosToolStripMenuItem
             // 
             this.modificarProductosToolStripMenuItem.Name = "modificarProductosToolStripMenuItem";
             this.modificarProductosToolStripMenuItem.Size = new System.Drawing.Size(188, 6);
             // 
-            // modificarProductosToolStripMenuItem1
+            // toolStripTextBox1
             // 
-            this.modificarProductosToolStripMenuItem1.Name = "modificarProductosToolStripMenuItem1";
-            this.modificarProductosToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
-            this.modificarProductosToolStripMenuItem1.Text = "Modificar productos...";
-            this.modificarProductosToolStripMenuItem1.Click += new System.EventHandler(this.modificarProductosToolStripMenuItem1_Click);
-            // 
-            // eliminarProductosToolStripMenuItem
-            // 
-            this.eliminarProductosToolStripMenuItem.Name = "eliminarProductosToolStripMenuItem";
-            this.eliminarProductosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.eliminarProductosToolStripMenuItem.Text = "Eliminar Productos...";
-            this.eliminarProductosToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductosToolStripMenuItem_Click);
+            this.toolStripTextBox1.AutoSize = false;
+            this.toolStripTextBox1.BackColor = System.Drawing.Color.Beige;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(10, 45);
+            this.toolStripTextBox1.Text = "|";
             // 
             // bUSCARToolStripMenuItem
             // 
+            this.bUSCARToolStripMenuItem.BackColor = System.Drawing.Color.AntiqueWhite;
             this.bUSCARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productosToolStripMenuItem});
+            this.bUSCARToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bUSCARToolStripMenuItem.Name = "bUSCARToolStripMenuItem";
-            this.bUSCARToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.bUSCARToolStripMenuItem.Size = new System.Drawing.Size(66, 45);
             this.bUSCARToolStripMenuItem.Text = "BUSCAR";
             // 
-            // productosToolStripMenuItem
+            // toolStripTextBox2
             // 
-            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.productosToolStripMenuItem.Text = "Productos...";
-            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
+            this.toolStripTextBox2.AutoSize = false;
+            this.toolStripTextBox2.BackColor = System.Drawing.Color.Beige;
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox2.Name = "toolStripTextBox2";
+            this.toolStripTextBox2.Size = new System.Drawing.Size(10, 23);
+            this.toolStripTextBox2.Text = "|";
             // 
             // rEPORTESToolStripMenuItem
             // 
+            this.rEPORTESToolStripMenuItem.BackColor = System.Drawing.Color.AntiqueWhite;
             this.rEPORTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reportesToolStripMenuItem1});
+            this.rEPORTESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
-            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(90, 45);
             this.rEPORTESToolStripMenuItem.Text = "INVENTARIO";
             // 
             // reportesToolStripMenuItem1
             // 
+            this.reportesToolStripMenuItem1.Image = global::pryGestorProductos.Properties.Resources.export_notes_24dp_5F6368_FILL0_wght400_GRAD0_opsz24;
             this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
-            this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.reportesToolStripMenuItem1.Text = "Reportes...";
             this.reportesToolStripMenuItem1.Click += new System.EventHandler(this.reportesToolStripMenuItem1_Click);
             // 
@@ -196,6 +198,41 @@
             this.btnReposicion.UseVisualStyleBackColor = true;
             this.btnReposicion.Click += new System.EventHandler(this.btnReposicion_Click);
             // 
+            // agregarProductosToolStripMenuItem
+            // 
+            this.agregarProductosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.agregarProductosToolStripMenuItem.Image = global::pryGestorProductos.Properties.Resources.add_24dp_5F6368_FILL0_wght400_GRAD0_opsz24;
+            this.agregarProductosToolStripMenuItem.Name = "agregarProductosToolStripMenuItem";
+            this.agregarProductosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.agregarProductosToolStripMenuItem.Text = "Agregar productos...";
+            this.agregarProductosToolStripMenuItem.Click += new System.EventHandler(this.agregarProductosToolStripMenuItem_Click);
+            // 
+            // modificarProductosToolStripMenuItem1
+            // 
+            this.modificarProductosToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.modificarProductosToolStripMenuItem1.Image = global::pryGestorProductos.Properties.Resources.edit_24dp_5F6368_FILL0_wght400_GRAD0_opsz24;
+            this.modificarProductosToolStripMenuItem1.Name = "modificarProductosToolStripMenuItem1";
+            this.modificarProductosToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
+            this.modificarProductosToolStripMenuItem1.Text = "Modificar productos...";
+            this.modificarProductosToolStripMenuItem1.Click += new System.EventHandler(this.modificarProductosToolStripMenuItem1_Click);
+            // 
+            // eliminarProductosToolStripMenuItem
+            // 
+            this.eliminarProductosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.eliminarProductosToolStripMenuItem.Image = global::pryGestorProductos.Properties.Resources.delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24;
+            this.eliminarProductosToolStripMenuItem.Name = "eliminarProductosToolStripMenuItem";
+            this.eliminarProductosToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.eliminarProductosToolStripMenuItem.Text = "Eliminar Productos...";
+            this.eliminarProductosToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductosToolStripMenuItem_Click);
+            // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.Image = global::pryGestorProductos.Properties.Resources.search_24dp_5F6368_FILL0_wght400_GRAD0_opsz24;
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Text = "Productos...";
+            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
+            // 
             // frmVentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,7 +254,6 @@
             this.msBarra.PerformLayout();
             this.gbPanel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -239,6 +275,8 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.GroupBox gbPanel;
         private System.Windows.Forms.Button btnReposicion;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
     }
 }
 
