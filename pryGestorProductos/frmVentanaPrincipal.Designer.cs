@@ -205,6 +205,7 @@
             this.Controls.Add(this.gbPanel);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.msBarra);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.msBarra;
             this.Name = "frmVentanaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

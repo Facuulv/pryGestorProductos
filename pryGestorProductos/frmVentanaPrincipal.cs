@@ -65,7 +65,10 @@ namespace pryGestorProductos
 
         private void frmVentanaPrincipal_Load(object sender, EventArgs e)
         {
-            
+            frmBienvenida bienvenida = new frmBienvenida();
+            bienvenida.Hide();
+            this.Show();
+            ObjPrincipal.VerificarStockCero();
         }
 
         private void reportesToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -81,7 +84,21 @@ namespace pryGestorProductos
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult resultado = MessageBox.Show(
+                        "Se va a cerrar la aplicación. ¿Estas seguro?",
+                        "Salir",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                return;
+            }
+            
         }
 
         private void btnReposicion_Click(object sender, EventArgs e)

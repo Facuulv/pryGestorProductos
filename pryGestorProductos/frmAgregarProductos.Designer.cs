@@ -47,6 +47,7 @@
             // 
             // gbAgregar
             // 
+            this.gbAgregar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gbAgregar.Controls.Add(this.rtxtDescripcion);
             this.gbAgregar.Controls.Add(this.txtStock);
             this.gbAgregar.Controls.Add(this.label6);
@@ -61,9 +62,9 @@
             this.gbAgregar.Controls.Add(this.txtCodigo);
             this.gbAgregar.Controls.Add(this.label1);
             this.gbAgregar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAgregar.Location = new System.Drawing.Point(17, 12);
+            this.gbAgregar.Location = new System.Drawing.Point(7, 12);
             this.gbAgregar.Name = "gbAgregar";
-            this.gbAgregar.Size = new System.Drawing.Size(249, 283);
+            this.gbAgregar.Size = new System.Drawing.Size(259, 283);
             this.gbAgregar.TabIndex = 4;
             this.gbAgregar.TabStop = false;
             this.gbAgregar.Text = "CARGA DE DATOS";
@@ -78,10 +79,12 @@
             this.rtxtDescripcion.Size = new System.Drawing.Size(143, 40);
             this.rtxtDescripcion.TabIndex = 3;
             this.rtxtDescripcion.Text = "";
+            this.rtxtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rtxtDescripcion_KeyPress);
             // 
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(98, 167);
+            this.txtStock.MaxLength = 10;
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(65, 22);
             this.txtStock.TabIndex = 5;
@@ -102,7 +105,7 @@
             this.btnCargar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.Location = new System.Drawing.Point(16, 229);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(218, 44);
+            this.btnCargar.Size = new System.Drawing.Size(224, 44);
             this.btnCargar.TabIndex = 7;
             this.btnCargar.Text = "Agregar Producto";
             this.btnCargar.UseVisualStyleBackColor = true;
@@ -114,6 +117,7 @@
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(142, 22);
             this.txtCategoria.TabIndex = 6;
+            this.txtCategoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCategoria_KeyPress);
             // 
             // label5
             // 
@@ -128,6 +132,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(98, 136);
+            this.txtPrecio.MaxLength = 10;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(65, 22);
             this.txtPrecio.TabIndex = 4;
@@ -159,6 +164,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(143, 22);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label2
             // 
@@ -173,6 +179,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(98, 25);
+            this.txtCodigo.MaxLength = 10;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(65, 22);
             this.txtCodigo.TabIndex = 1;

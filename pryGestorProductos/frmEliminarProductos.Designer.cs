@@ -52,6 +52,7 @@
             // 
             // gbEliminar
             // 
+            this.gbEliminar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gbEliminar.Controls.Add(this.btnEliminar);
             this.gbEliminar.Controls.Add(this.txtCodigoE);
             this.gbEliminar.Controls.Add(this.label2);
@@ -83,10 +84,12 @@
             this.txtCodigoE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodigoE.Location = new System.Drawing.Point(64, 26);
             this.txtCodigoE.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigoE.MaxLength = 10;
             this.txtCodigoE.Name = "txtCodigoE";
             this.txtCodigoE.Size = new System.Drawing.Size(110, 22);
             this.txtCodigoE.TabIndex = 4;
             this.txtCodigoE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCodigoE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoE_KeyPress);
             // 
             // label2
             // 

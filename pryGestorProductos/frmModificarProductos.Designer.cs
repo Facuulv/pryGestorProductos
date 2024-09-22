@@ -75,7 +75,7 @@
             // 
             // gbModificar
             // 
-            this.gbModificar.BackColor = System.Drawing.SystemColors.Control;
+            this.gbModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gbModificar.Controls.Add(this.pictureBox1);
             this.gbModificar.Controls.Add(this.groupBox3);
             this.gbModificar.Controls.Add(this.btnLimpiar);

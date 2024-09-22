@@ -59,7 +59,7 @@ namespace pryGestorProductos
         {
             if (txtCodigo.Text != "")
             {
-                int cod = Convert.ToInt16(txtCodigo.Text);
+                int cod = Convert.ToInt32(txtCodigo.Text);
                 if (ObjBuscar.VerificarProd(cod))
                 {
                     ObjBuscar.BuscarCodigo(dgvBuscarProductos, cod);
@@ -78,7 +78,7 @@ namespace pryGestorProductos
             dgvBuscarProductos.DataSource = null;
             dgvBuscarProductos.Rows.Clear();
             txtProducto.Text = "";
-            cmbCategoria.Text = "";
+            cmbCategoria.SelectedIndex = -1;
             txtCodigo.Text = "";
             optProducto.Select();
         }   
@@ -129,6 +129,30 @@ namespace pryGestorProductos
             dgvBuscarProductos.Columns["Descripcion"].Width = 220;
             dgvBuscarProductos.Columns["Stock"].Width = 50;
             dgvBuscarProductos.Columns["Categoria"].Width = 100;
+        }
+
+        private void txtProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cmbCategoria_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
